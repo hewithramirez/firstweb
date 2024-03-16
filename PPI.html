@@ -3,50 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hewith Ramírez C">
+    <meta name="description" content="PageWebPPI">
     <title>PPI-COMPENSAR</title>
+    <link rel="icon" type="img/icon" href="./Logos/casco.png">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class="menu">
-       <ul class="list">
-            <img src="./Logos/Compensar.png" alt="logo-pagina" class="logo">
-            <li class="item">
-                Somos Proyectos <br>
-                de Infraestructura</li>
-            <li class="item">Proyectos</li>
-            <li class="item">Servicios</li>
-            <li class="item">Data</li>                
-        </ul> 
-    </header>
-    <section class="contenido">
-        <p class="slogan">Fomentando la pasión por la transformación social, <br>
-                        construimos un futuro sostenible juntos</p>
-        <figure class="subcontenido">
-            <section class="image-container">
-                <img src="./Logos/planear.jpg" alt="photo1" class="photo">
-                <p class="textImg">Planear</p>
-            </section>
-            <section class="image-container">
-                <img src="./Logos/construir.jpg" alt="photo2" class="photo">
-                <p class="textImg">Construir</p>
-            </section>
-            <section class="image-container">+
-                <img src="./Logos/asesoria.jpg" alt="photo3" class="photo">
-                <p class="textImg">Asesorar</p>
-            </section>
-        </figure>
-    </section>
-    <footer class="datos">
-        <section class="contacto">
-            <h2>Contacto</h2>
-            <p>infraestructura@compensar.com <br>
-                (601) 4280666 ext. 17500</p>
-        </section>
-        <section class="redes">
-            <h2>Síguenos</h2>
-            <img src="./Logos/instagram.png" alt="logo-redes" class="logo-redes">
-            <img src="./Logos/facebook.avif" alt="logo-redes" class="logo-redes">
-        </section>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="./Logos/Compensar.png" alt="logo-pagina" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler"></div>
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Soy Proveedor</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Procedimientos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" aria-disabled="true">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Logos/proyecto1.jpg" class="d-block w-100" alt="photo">
+            <div class="overlay">
+                <p>Portafolio y servicios para un mejor proyecto</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Logos/proyecto4.png" class="d-block w-100" alt="photo">
+            <div class="overlay">
+                <p>Portafolio y servicios para un mejor proyecto</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Logos/proyecto6.png" class="d-block w-100" alt="photo">
+            <div class="overlay">
+                <p>Portafolio y servicios para un mejor proyecto</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container soy_proveedor seccion-clara p-5">
+        <h2 class="seccion-titulo text-center p-5">Soy Proveedor</h2>
+        <div class="seccion-texto text-center p5">En este espacio ud encontrará un formulario para suscibirse como proveedor o <br>
+                podrá enviar sus facturas. Tenga en cuenta al momento de enviar la información, <br>
+                elegir el formulario: creación de proveedor o envío de factura.
+        </div>
+        <div class="formularios row p-5">
+            <div class="col-md-6">
+                <div class="formulario1 p-5">
+                    <h3 class="titulo-formulario">Creación de proveedor</h3>
+                    <form class="p-5">
+                        <label class="form-label" for="campo_nombre_proveedor">Nombre Proveedor:</label>
+                        <input class="form-control" type="text" id="campo_nombre_proveedor" placeholder="Escribe el nombre de la empresa">
+                        <input class="form-control" type="date" id="campo_nombre_proveedor">
+                        <label class="form-label" for="campo_nit_proveedor">Nit:</label>
+                        <input class="form-control" type="text" id="campo_nit_proveedor" placeholder="Escribe el nit de la empresa">
+                        <label class="form-label" for="boton_adjuntar_cámara_comercio">Anexe Cámara Comercio</label>
+                        <input class="form-control" type="file" id="boton_adjuntar_cámara_comercio" placeholder="Cámara Comercio">
+                        <label class="form-label" for="boton_adjuntar_RUT">Anexe RUT</label>
+                        <input class="form-control" type="file" id="boton_adjuntar_RUT" placeholder="RUT">
+                        <label class="form-label" for="boton_adjuntar_cédula">Anexe Cédula Rep Legal</label>
+                        <input class="form-control" type="file" id="boton_adjuntar_cédula" placeholder="Cédula Rep Legal">
+                    </form>
+                </div> 
+            </div>
+            <div class="col-md-6"> 
+                <div class="formulario2 p-5">
+                    <h3 class="titulo-formulario">Envío de factura</h3>
+                    <form class="p-5">
+                        <label class="form-label" for="campo_nombre_proveedor">Nombre Proveedor:</label>
+                        <input class="form-control" type="text" id="campo_nombre_proveedor" placeholder="Escribe el nombre de la empresa">
+                        <input class="form-control" type="date" id="campo_nombre_proveedor">
+                        <label class="form-label" for="campo_nit_proveedor">Nit:</label>
+                        <input class="form-control" type="text" id="campo_nit_proveedor" placeholder="Escribe el nit de la empresa">
+                        <label class="form-label" for="campo_nombre_proyecto">Proyecto:</label>
+                        <input class="form-control" type="text" id="campo_nombre_proyecto" placeholder="Escribe el nombre del proyecto">
+                        <label class="form-label" for="descripcion_factura">Descripción:</label>
+                        <input class="form-control" type="text" id="descripcion_factura" placeholder="Indique # factura, # contrato # acta y objeto">                  
+                        <label class="form-label" for="boton_adjuntar_facturaXml">Anexe factura formato xml</label>
+                        <input class="form-control" type="file" id="boton_adjuntar_facturaXml" placeholder="FacturaXml">
+                        <label class="form-label" for="boton_adjuntar_facturaPdf">Anexe factura formato pdf</label>
+                        <input class="form-control" type="file" id="boton_adjuntar_facturaPdf" placeholder="FacturaPdf">
+                    </form>
+                </div>       
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid enterese seccion-oscura d-flex flex-column mt-5 p-5">
+        <h2 class="seccion-titulo text-center p-5">Entérese de las últimas noticias</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 p-5">
+                    <div class="card">
+                        <img src="./Logos/Comunicado1.png" class="card-img-top" alt="comunicado">
+                        <div class="card-body">
+                        <h5 class="card-title">Comunicados</h5>
+                        <p class="card-text">Ha cambiado el procedimiento de recepción de pólizas</p>
+                        <a href="./Logos/comunicadopolizas.jpg" class="btn btn-primary">Conoce más detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 p-5">    
+                    <div class="card">
+                        <img src="./Logos/Comunicado2.png" class="card-img-top" alt="comunicado">
+                        <div class="card-body">
+                        <h5 class="card-title">Lanzamiento</h5>
+                        <p class="card-text">Conoce la nueva sede Integral Cr. 60. Abrimos nuestra puertas a partir el 4 de marzo del 2024</p>
+                        <a href="./Fotos_Cr. 60/" class="btn btn-primary">Galería de fotos</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-6 col-lg-3 p-5">   
+                    <div class="card">
+                        <img src="./Logos/Comunicado3.png" class="card-img-top" alt="comunicado">
+                        <div class="card-body">
+                        <h5 class="card-title">Asamblea Compensar</h5>
+                        <p class="card-text">Si tu empresa está afiliada a Compensar, te esperamos en la Asamblea el 14 de marzo del 2024</p>
+                        <a href="#" class="btn btn-primary">Agenda</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 p-5">
+                    <div class="card">
+                        <img src="./Logos/Comunicado4.jpg" class="card-img-top" alt="comunicado">
+                        <div class="card-body">
+                        <h5 class="card-title">Vacantes</h5>
+                        <p class="card-text">Buscamos residente de obra para nuestro proyecto FUC</p>
+                        <a href="#" class="btn btn-primary">Conoce los requisito</a>
+                        <a href="#" class="btn btn-primary">Envía hoja de vida</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid procedimientos seccion-clara text-center p-5">
+        <h2 class="seccion-titulo text-center p-5">Procedimientos - Formulario control de interventoría</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <form>
+                    <label class="form-label" for="campo_nombre_proyecto">Proyecto:</label>
+                    <input class="form-control" type="text" id="campo_nombre_proyecto" placeholder="Escribe el nombre del proyecto">
+                    <input class="form-control" type="date" id="campo_nombre_proyecto">
+                    <label class="form-label" for="campo_contratos_ejecución">Contratos ejecución:</label>
+                    <input class="form-control" type="text" id="campo_contratos_ejecución" placeholder="Número de contratos">
+                    <label class="form-label" for="campo_contratos_en_liquidación">En liquidación:</label>
+                    <input class="form-control" type="text" id="campo_contratos_en_liquidación" placeholder="Número de contratos">
+                    <label class="form-label" for="campo_contratos_liquidados">Liquidados:</label>
+                    <input class="form-control" type="text" id="campo_contratos_liquidados" placeholder="Número de contratos">
+                    <label class="form-label" for="campo_contratos_en_modif">En modificación:</label>
+                    <input class="form-control" type="text" id="campo_contratos_en_modif" placeholder="Número de contratos">
+                    <label class="form-label" for="campo_%_avance_programado">Avance Programado:</label>
+                    <input class="form-control" type="text" id="campo_%_avance_programado" placeholder="% programado">
+                    <label class="form-label" for="campo_%_avance_ejecutado">Avance Ejecutado:</label>
+                    <input class="form-control" type="text" id="campo_%_avance_ejecutado" placeholder="% ejecutado">
+                    <label class="form-label" for="campo_presupuesto_proyectado">Presupuesto proyectado:</label>
+                    <input class="form-control" type="text" id="campo_presupuesto_proyectado" placeholder="$ proyectado">
+                    <label class="form-label" for="campo_%_variación_presupuestal">Variación presupuestal:</label>
+                    <input class="form-control" type="text" id="campo_%_variación_presupuestal" placeholder="% variación">
+                    <label class="form-label" for="boton_adjuntar_informe">Anexe informe</label>
+                    <input class="form-control" type="file" id="boton_adjuntar_informe" placeholder="Informe">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <h3>Síguenos</h3>
+                    <div>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Contacto</h3>
+                    <p>infraestructura@compensar.com <br>
+                        (601) 4280666 ext. 17500</p>
+                </div>           
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

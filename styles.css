@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Pompiere&family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar{
     font-family: "Nunito Sans", sans-serif;
     background-color: #52BE80;
-    color: white;
 }
 
-.list{
-    display: flex;
+.navbar-collapse{
     align-items: center;
-    justify-content: space-around;
-    list-style: none;
+    justify-content: space-between;
 }
 
 .logo{ 
@@ -23,86 +20,94 @@
     height: 10%;
 }
 
-.item{
-    list-style-type: none;
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item img{
+    transition: all 0.2s ease;
     position: relative;
 }
 
-.item:hover{
-    color: #424949;
-    cursor: pointer; 
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.contenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+.overlay p{
+  font-family: "Mynerve", cursive;
+  color: yellowgreen;
+  font-weight: bold;
 }
 
-.subcontenido{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-.image-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20%;
-    height: 20%;
+.carousel-item img :hover .overlay{
+    opacity: 1;
 }
 
-.photo{
-    width: 80%;
-    height: 80%;
-    border-radius: 10px;
+.seccion-clara{
+    background-color: white;
+    height: 700%;
 }
-      
-.slogan{
-    font-family: "Titillium Web", sans-serif;
-    font-size: 200%;
+
+.seccion-oscura{
+    background-color: #F2F4F4;
+    height: 700px;
+}
+
+.seccion-titulo{
+    font-family: "Walter Turncoat", cursive;
+    font-size: 60px;
     font-weight: bold; 
 }
 
-.textImg{
-    display: flex;   
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 120%;     
+.seccion-texto{
+    font-family: "Pompiere", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.titulo-formulario{
+    font-family: "Walter Turncoat", cursive;
+    font-size: 30px;
+    font-weight: bold; 
+}
+
+form{
+    border: 2px solid #8080804d;
+    transition: all 0.2s ease-in;
+}
+
+form :hover{
+    background-color: #FCF3CF;
+}
+
+.btn-primary{
+    margin: 5px 0px 5px 0px;
+    font-weight: bold;
 }
 
 footer{
     display: flex;
-    justify-content: space-evenly;
-    height: 10%;
     background-color: #D0D3D4;
 }
 
-.contacto{
+h3{
     display: flex;
-    flex-direction: column;
     font-family: "Nunito Sans", sans-serif;
-    font-size: 10px;
     color: #666;
     font-weight: bold;
 }
 
-.redes{
-    display: flex;
-    flex-direction: column;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 10px;
-    color: #666;
-    font-weight: bold;
-}
-
-
-.logo-redes{
-    width: auto;
-    height: auto;
-    max-width: 40px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+@media screen and (max-with: 767px){
+    .navbar-brand{
+        display: none;
+    }   
 }
