@@ -89,9 +89,9 @@ form :hover{
     background-color: #FCF3CF;
 }
 
-.btn-primary{
+.btn{
     margin: 5px 0px 5px 0px;
-    font-weight: bold;
+    background-color: red;
 }
 
 footer{

@@ -23,22 +23,22 @@
             <div class="collapse navbar-collapse" id="navbar-toggler"></div>
                 <ul class="navbar-nav d-flex align-items-center">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="#carouselExampleIndicators">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Soy Proveedor</a>
+                      <a class="nav-link" href="#soy-proveedor">Soy Proveedor</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Procedimientos</a>
+                      <a class="nav-link" href="#procedimientos">Procedimientos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" aria-disabled="true">Proyectos</a>
+                      <a class="nav-link" href="#proyectos" aria-disabled="true">Proyectos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="carouselExampleIndicators container" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -73,7 +73,7 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="container soy_proveedor seccion-clara p-5">
+    <div id="soy-proveedor" class="container soy_proveedor seccion-clara p-5">
         <h2 class="seccion-titulo text-center p-5">Soy Proveedor</h2>
         <div class="seccion-texto text-center p5">En este espacio ud encontrará un formulario para suscibirse como proveedor o <br>
                 podrá enviar sus facturas. Tenga en cuenta al momento de enviar la información, <br>
@@ -84,17 +84,30 @@
                 <div class="formulario1 p-5">
                     <h3 class="titulo-formulario">Creación de proveedor</h3>
                     <form class="p-5">
-                        <label class="form-label" for="campo_nombre_proveedor">Nombre Proveedor:</label>
-                        <input class="form-control" type="text" id="campo_nombre_proveedor" placeholder="Escribe el nombre de la empresa">
-                        <input class="form-control" type="date" id="campo_nombre_proveedor">
-                        <label class="form-label" for="campo_nit_proveedor">Nit:</label>
-                        <input class="form-control" type="text" id="campo_nit_proveedor" placeholder="Escribe el nit de la empresa">
-                        <label class="form-label" for="boton_adjuntar_cámara_comercio">Anexe Cámara Comercio</label>
-                        <input class="form-control" type="file" id="boton_adjuntar_cámara_comercio" placeholder="Cámara Comercio">
-                        <label class="form-label" for="boton_adjuntar_RUT">Anexe RUT</label>
-                        <input class="form-control" type="file" id="boton_adjuntar_RUT" placeholder="RUT">
-                        <label class="form-label" for="boton_adjuntar_cédula">Anexe Cédula Rep Legal</label>
-                        <input class="form-control" type="file" id="boton_adjuntar_cédula" placeholder="Cédula Rep Legal">
+                        <div class="form-floating mb-3">
+                            <input class="form-control mb-3" type="text" id="campo_nombre_proveedor" placeholder="Escribe el nombre de la empresa">
+                            <input class="form-control mb-3" type="date" id="campo_nombre_proveedor">
+                            <label class="form-label" for="campo_nombre_proveedor">Nombre Proveedor:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="campo_nit_proveedor" placeholder="Escribe el nit de la empresa">
+                            <label class="form-label" for="campo_nit_proveedor">Nit:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="file" id="boton_adjuntar_cámara_comercio" placeholder="Cámara Comercio">                            
+                            <label class="form-label" for="boton_adjuntar_cámara_comercio">Anexe Cámara Comercio</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="file" id="boton_adjuntar_RUT" placeholder="RUT">
+                            <label class="form-label" for="boton_adjuntar_RUT">Anexe RUT</label>
+                        </div>        
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="file" id="boton_adjuntar_cédula" placeholder="Cédula Rep Legal">
+                            <label class="form-label" for="boton_adjuntar_cédula">Anexe Cédula Rep Legal</label>
+                        </div>
+                        <div class="col-md-4 offset-md-4 text-center">
+                            <button class="btn btn-success" type="submit">ENVIAR</button>
+                        </div>    
                     </form>
                 </div> 
             </div>
@@ -102,25 +115,40 @@
                 <div class="formulario2 p-5">
                     <h3 class="titulo-formulario">Envío de factura</h3>
                     <form class="p-5">
-                        <label class="form-label" for="campo_nombre_proveedor">Nombre Proveedor:</label>
-                        <input class="form-control" type="text" id="campo_nombre_proveedor" placeholder="Escribe el nombre de la empresa">
-                        <input class="form-control" type="date" id="campo_nombre_proveedor">
-                        <label class="form-label" for="campo_nit_proveedor">Nit:</label>
-                        <input class="form-control" type="text" id="campo_nit_proveedor" placeholder="Escribe el nit de la empresa">
-                        <label class="form-label" for="campo_nombre_proyecto">Proyecto:</label>
-                        <input class="form-control" type="text" id="campo_nombre_proyecto" placeholder="Escribe el nombre del proyecto">
-                        <label class="form-label" for="descripcion_factura">Descripción:</label>
-                        <input class="form-control" type="text" id="descripcion_factura" placeholder="Indique # factura, # contrato # acta y objeto">                  
-                        <label class="form-label" for="boton_adjuntar_facturaXml">Anexe factura formato xml</label>
-                        <input class="form-control" type="file" id="boton_adjuntar_facturaXml" placeholder="FacturaXml">
-                        <label class="form-label" for="boton_adjuntar_facturaPdf">Anexe factura formato pdf</label>
-                        <input class="form-control" type="file" id="boton_adjuntar_facturaPdf" placeholder="FacturaPdf">
+                        <div class="form-floating mb-3">
+                            <input class="form-control mb-3" type="text" id="campo_nombre_proveedor" placeholder="Escribe el nombre de la empresa">
+                            <input class="form-control mb-3" type="date" id="campo_nombre_proveedor">
+                            <label class="form-label" for="campo_nombre_proveedor">Nombre Proveedor:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="campo_nit_proveedor" placeholder="Escribe el nit de la empresa">
+                            <label class="form-label" for="campo_nit_proveedor">Nit:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="campo_nombre_proyecto" placeholder="Escribe el nombre del proyecto">
+                            <label class="form-label" for="campo_nombre_proyecto">Proyecto:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="text" id="descripcion_factura" placeholder="Indique # factura, # contrato # acta y objeto">                  
+                            <label class="form-label" for="descripcion_factura">Descripción:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="file" id="boton_adjuntar_facturaXml" placeholder="FacturaXml">
+                            <label class="form-label" for="boton_adjuntar_facturaXml">Anexe factura formato xml</label>
+                        </div>
+                        <div class="form-floating mb-3">                            
+                            <input class="form-control" type="file" id="boton_adjuntar_facturaPdf" placeholder="FacturaPdf">
+                            <label class="form-label" for="boton_adjuntar_facturaPdf">Anexe factura formato pdf</label>
+                        </div>
+                        <div class="col-md-4 offset-md-4 text-center">
+                            <button class="btn btn-success" type="submit">ENVIAR</button>
+                        </div>    
                     </form>
                 </div>       
             </div>
         </div>
     </div>
-    <div class="container-fluid enterese seccion-oscura d-flex flex-column mt-5 p-5">
+    <div id="soy-proveedor" class="container-fluid enterese seccion-oscura d-flex flex-column mt-5 p-5">
         <h2 class="seccion-titulo text-center p-5">Entérese de las últimas noticias</h2>
         <div class="container">
             <div class="row">
@@ -130,7 +158,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Comunicados</h5>
                         <p class="card-text">Ha cambiado el procedimiento de recepción de pólizas</p>
-                        <a href="./Logos/comunicadopolizas.jpg" class="btn btn-primary">Conoce más detalles</a>
+                        <a href="./Logos/comunicadopolizas.jpg" class="btn btn-info">Conoce más detalles</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +168,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Lanzamiento</h5>
                         <p class="card-text">Conoce la nueva sede Integral Cr. 60. Abrimos nuestra puertas a partir el 4 de marzo del 2024</p>
-                        <a href="./Fotos_Cr. 60/" class="btn btn-primary">Galería de fotos</a>
+                        <a href="./Fotos_Cr. 60/" class="btn btn-info">Galería de fotos</a>
                         </div>
                     </div>
                 </div> 
@@ -150,7 +178,7 @@
                         <div class="card-body">
                         <h5 class="card-title">Asamblea Compensar</h5>
                         <p class="card-text">Si tu empresa está afiliada a Compensar, te esperamos en la Asamblea el 14 de marzo del 2024</p>
-                        <a href="#" class="btn btn-primary">Agenda</a>
+                        <a href="#" class="btn btn-info">Agenda</a>
                         </div>
                     </div>
                 </div>
@@ -160,40 +188,68 @@
                         <div class="card-body">
                         <h5 class="card-title">Vacantes</h5>
                         <p class="card-text">Buscamos residente de obra para nuestro proyecto FUC</p>
-                        <a href="#" class="btn btn-primary">Conoce los requisito</a>
-                        <a href="#" class="btn btn-primary">Envía hoja de vida</a>
+                        <a href="#" class="btn btn-info">Conoce los requisito</a>
+                        <a href="mailto: hlramirezc@compensar.com" class="btn btn-info">Envía hoja de vida
+                            <i class="bi bi-envelope-paper-fill"></i>
+                        </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid procedimientos seccion-clara text-center p-5">
-        <h2 class="seccion-titulo text-center p-5">Procedimientos - Formulario control de interventoría</h2>
+    <div id="procedimientos" class="container-fluid procedimientos seccion-clara text-center p-5">
+        <h2 class="seccion-titulo text-center p-5">
+            Procedimientos <br>
+            - Formulario control de interventoría -
+        </h2>
         <div class="row">
-            <div class="col-md-3">
-                <form>
-                    <label class="form-label" for="campo_nombre_proyecto">Proyecto:</label>
-                    <input class="form-control" type="text" id="campo_nombre_proyecto" placeholder="Escribe el nombre del proyecto">
-                    <input class="form-control" type="date" id="campo_nombre_proyecto">
-                    <label class="form-label" for="campo_contratos_ejecución">Contratos ejecución:</label>
-                    <input class="form-control" type="text" id="campo_contratos_ejecución" placeholder="Número de contratos">
-                    <label class="form-label" for="campo_contratos_en_liquidación">En liquidación:</label>
-                    <input class="form-control" type="text" id="campo_contratos_en_liquidación" placeholder="Número de contratos">
-                    <label class="form-label" for="campo_contratos_liquidados">Liquidados:</label>
-                    <input class="form-control" type="text" id="campo_contratos_liquidados" placeholder="Número de contratos">
-                    <label class="form-label" for="campo_contratos_en_modif">En modificación:</label>
-                    <input class="form-control" type="text" id="campo_contratos_en_modif" placeholder="Número de contratos">
-                    <label class="form-label" for="campo_%_avance_programado">Avance Programado:</label>
-                    <input class="form-control" type="text" id="campo_%_avance_programado" placeholder="% programado">
-                    <label class="form-label" for="campo_%_avance_ejecutado">Avance Ejecutado:</label>
-                    <input class="form-control" type="text" id="campo_%_avance_ejecutado" placeholder="% ejecutado">
-                    <label class="form-label" for="campo_presupuesto_proyectado">Presupuesto proyectado:</label>
-                    <input class="form-control" type="text" id="campo_presupuesto_proyectado" placeholder="$ proyectado">
-                    <label class="form-label" for="campo_%_variación_presupuestal">Variación presupuestal:</label>
-                    <input class="form-control" type="text" id="campo_%_variación_presupuestal" placeholder="% variación">
-                    <label class="form-label" for="boton_adjuntar_informe">Anexe informe</label>
-                    <input class="form-control" type="file" id="boton_adjuntar_informe" placeholder="Informe">
+            <div class="col-md-3 p-5">
+                <form class="p-5">
+                    <div class="form-floating mb-3">
+                        <input class="form-control mb-3" type="text" id="campo_nombre_proyecto" placeholder="Escribe el nombre del proyecto">
+                        <input class="form-control mb-3" type="date" id="campo_nombre_proyecto">
+                        <label class="form-label" for="campo_nombre_proyecto">Proyecto:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_contratos_ejecución" placeholder="Número de contratos">
+                        <label class="form-label" for="campo_contratos_ejecución">Contratos ejecución:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_contratos_en_liquidación" placeholder="Número de contratos">
+                        <label class="form-label" for="campo_contratos_en_liquidación">En liquidación:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_contratos_liquidados" placeholder="Número de contratos">
+                        <label class="form-label" for="campo_contratos_liquidados">Liquidados:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_contratos_en_modif" placeholder="Número de contratos">
+                        <label class="form-label" for="campo_contratos_en_modif">En modificación:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_%_avance_programado" placeholder="% programado">
+                        <label class="form-label" for="campo_%_avance_programado">Avance Programado:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_%_avance_ejecutado" placeholder="% ejecutado">
+                        <label class="form-label" for="campo_%_avance_ejecutado">Avance Ejecutado:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_presupuesto_proyectado" placeholder="$ proyectado">
+                        <label class="form-label" for="campo_presupuesto_proyectado">Presupuesto proyectado:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="campo_%_variación_presupuestal" placeholder="% variación">
+                        <label class="form-label" for="campo_%_variación_presupuestal">Variación presupuestal:</label>                        
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="file" id="boton_adjuntar_informe" placeholder="Informe">
+                        <label class="form-label" for="boton_adjuntar_informe">Anexe informe</label>
+                    </div>
+                    <div class="col-md-4 offset-md-4 text-center">
+                        <button class="btn btn-success" type="submit">ENVIAR</button>
+                    </div>    
                 </form>
             </div>
         </div>
